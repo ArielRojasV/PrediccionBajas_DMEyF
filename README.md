@@ -23,6 +23,7 @@ Para este script se tomo como base el "Gustavo Pasquini", optimizando 3 hiperpar
 - num_iterations
 - num_leaves
 - min_sum_hessian_in_leaf
+  
 No se uso undersampling.
 La métrica a optimizar es "auc".
 El script también devuelve la curva de envios para 202106 con las ganancias estimadas, que se uso para determinar
