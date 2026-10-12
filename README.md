@@ -16,16 +16,20 @@ creando un csv con el detalle de los numeros de clientes.
 
 El script de "Optimizador_Hiperparametros", permite determinar los mejores hiperparametros tomando como entrenamiento
 los meses de 202103 y 202104, testeando en 202106.
+
 Este script se deberia ejecutar luego de "IngenieriaAtributos". El resultado del mismo se utiliza en el 
 script que genera el modelo final, el cual ya posee los mejores hiperparametros del modelo, con lo cual en este caso 
 puede saltearse este paso.
+
 Para este script se tomo como base el "Gustavo Pasquini", optimizando 3 hiperparametros:
 - num_iterations
 - num_leaves
 - min_sum_hessian_in_leaf
   
 No se uso undersampling.
+
 La métrica a optimizar es "auc".
+
 El script también devuelve la curva de envios para 202106 con las ganancias estimadas, que se uso para determinar
 el corte óptimo.
 
